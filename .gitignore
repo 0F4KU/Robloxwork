@@ -1,0 +1,10 @@
+# Roblox place and model binaries: the source of truth is src/ and default.project.json
+*.rbxl
+*.rbxlx
+*.rbxm
+*.rbxmx
+*.lock
+
+# Build output
+build/
+*.build.rbxl
