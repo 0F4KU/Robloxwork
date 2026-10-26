@@ -1,41 +1,15 @@
 {
-	"name": "Obby Simplu",
+	"name": "Sell a car",
 	"tree": {
 		"$className": "DataModel",
 
-		"ServerScriptService": {
+		"Workspace": {
+			"$className": "Workspace",
 			"$ignoreUnknownInstances": true,
-			"ObbyServer": { "$path": "src/server/ObbyServer.server.luau" },
-			"ProgressionServer": { "$path": "src/server/ProgressionServer.server.luau" },
-			"ZoneHazards": { "$path": "src/server/ZoneHazards.server.luau" },
-			"Feedback": { "$path": "src/server/Feedback.luau" }
-		},
-
-		"ReplicatedStorage": {
-			"$ignoreUnknownInstances": true,
-			"Shared": {
-				"$className": "Folder",
+			"Car": {
+				"$className": "Model",
 				"$ignoreUnknownInstances": true,
-				"ProgressionConfig": { "$path": "src/shared/ProgressionConfig.luau" }
-			},
-			"Remotes": {
-				"$className": "Folder",
-				"$ignoreUnknownInstances": true,
-				"AllocateStat": { "$className": "RemoteEvent" }
-			}
-		},
-
-		"StarterGui": {
-			"$ignoreUnknownInstances": true,
-			"MainMenu": {
-				"$className": "ScreenGui",
-				"$ignoreUnknownInstances": true,
-				"MenuController": { "$path": "src/client/MenuController.client.luau" }
-			},
-			"HUD": {
-				"$className": "ScreenGui",
-				"$ignoreUnknownInstances": true,
-				"HUDController": { "$path": "src/client/HUDController.client.luau" }
+				"CarController": { "$path": "src/server/vehicles/CarController.server.luau" }
 			}
 		}
 	}
